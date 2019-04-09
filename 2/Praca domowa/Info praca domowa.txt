@@ -1,0 +1,6 @@
+1. wystylizować menu (jakieś kolory, poprawić ułożenie linków)
+2. umiejscowić obrazki obok siebie z jakimś przyjemnym odstępem
+3. Ustawić dla obrazków ramkę (border) pojawiającą się po najechaniu kursorem na obrazek.
+4. Ustawić tło strony.
+
+Dodatkowo można powalczyć z responsywnością strony
