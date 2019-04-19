@@ -1,0 +1,33 @@
+Praca domowa 3
+
+1. Stwórz zmienne:
+name, surname, age, animal, PI, country, year i przypisz im dowolne wartosci. Nastepnie w konsoli wypisz według schematu każdą zmienną:
+
+Name: Tomek
+Surname: Świrski
+itp
+
+2. Zmień wartość zmiennej animal na inne zwierze.
+
+3. Napisz instrukcję warunkową która wyświetli dowolny komunikat w konsoli jeśli zmienna country przyjmuje wartość "poland". Zadbaj o to by wielkość liter nie miała znaczenia. Jeśli zmienna ma inną wartość wypisz w konsoli: "End is near."
+
+4. Stwórz funkcje która będzie przyjmowała 2 parametry. Funkcja ma zwracać(return) informację ile lat jest pomiędzy jednym i drugim rokiem. Zakładamy że drugi parametr tej funkcji jest większy .
+
+Dla chętnych wersja zadania bez ograniczenia która liczba jest większa . Domyślnie każda może być większa a funkcja ma zwracać liczbę dodatnią lub 0.
+
+5. Napisz program(nie musi być funkcja), który wyświetla liczby od 1 do 100. Dla liczb podzielnych przez 3 niech program wyświetli „Fizz”; dla liczb podzielnych przez 5 niech wyświetli ‚Buzz’; a dla liczb podzielnych przez 15 niech wyświetli ‚FizzBuzz’.
+
+Czyli początek wygląda tak:
+
+1
+2
+Fizz
+4
+Buzz
+6
+7
+
+Termin do 28.04 15:00
+
+Mail: tomaszswirski@wp.pl 
+Lub do Ani na priv 
