@@ -24,6 +24,13 @@
 
         //tutaj zrob odpowiednie petle - np. for:
 
+        for(let i=0; i<tab.length;i++){
+            for(let j=0; j<tab[i].length; j++){
+                  let pobranyKolor = colors[tab[i][j]];
+                  tekst += '<div style="background:' + pobranyKolor + '"></div>';
+            }
+            tekst += "<br>";
+        }
 
         //tutaj wstawiamy do div wygenerowany html - nie ruszaj poniższej linijki
         document.querySelector('.canvas').innerHTML = tekst;
