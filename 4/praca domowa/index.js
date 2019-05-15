@@ -1,15 +1,53 @@
-//deklaracja tablicy
-const arr = ["Ania", "Tomek", "Marcin", 67,
- {name: "ania", age:15}];
-console.log(arr);
-console.log(arr[2]);
-console.log(arr[4].age)
-arr[1] = "Michał"
-console.log(arr)
-//length
-console.log(arr.length)
+// Praca domowa nr 4
+// Termin: 16.05 22:59
+// Pracę do mnie na maila:
+// tomaszswirski@wp.pl 
+// albo do Ani :)
+
+// zad.1
+// Napisz funkcję, która przyjmuje dwa argumenty - element oraz tablicę i sprawdza czy dany element znajduje się w tablicy.
+// Jeżeli dany element nie znajduje się w tablicy funkcja zwraca "Nie ma takiego elementu w tablicy", a jeśli jest to zwraca
+// numer indeksu tego elementu.
+const x = "Marcin";
+const arr = [];
+
+function(){
+
+}
+
+// zad.2
+// Napisz funkcję, który wyświetli po kolei wszystkie elementy dwuwymiarowej tablicy (np.[[1,1,1],[2,3,4,5]]).
+
+// zad.3
+// Napisz funkcję, która usuwa środkowy element z tablicy.
+
+// zad.4 
+// Napisz funkcję, która przyjmuje jako argumenty dwie tablice i zwraca sumę ich elementów.
+
+// zad. 5
+// Dokończyć grę papier kamień nożyce. 
+// Może być po przez prompt i alert ale zalecamy zbudować do tego interfejs dla użytkownika(html) .
+
+// zad. 6
+// Podaj hasło obecności na zajęciach (okoń2)
+
+
+
+
+
+
+// //deklaracja tablicy
+// const arr = ["Ania", "Tomek", "Marcin", 67,
+//  {name: "ania", age:15}];
+// console.log(arr);
+// console.log(arr[2]);
+// console.log(arr[4].age)
+// arr[1] = "Michał"
+// console.log(arr)
+// //length
+// console.log(arr.length)
 // //dodawanie elementów - push lub po indeksie, unshift
-arr[5] = "Kasia";
+// arr[5] = "Kasia";
 // console.log(arr);
 // arr.push("Marzena");
 // console.log(arr);
