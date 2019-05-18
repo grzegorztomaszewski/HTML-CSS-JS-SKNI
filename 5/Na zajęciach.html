@@ -1,0 +1,125 @@
+<html >
+    <head>
+    <meta charset = "utf-8">
+    <title> WAS 5 </title> 
+    </head>
+     <body >
+    <input id = "userNumber" >
+    <button id = "submit" >
+    Submit
+     </button>
+      <p id = "result" >
+
+    </p>
+
+    <form id = "form"
+action = "https://simple-movie-api-2019.herokuapp.com/movies"
+method = "POST" >
+    <input name = "title" >
+    <input name = "year" >
+    <input name = "rated" >
+    <input name = "runtime" >
+    <button type = "submit" >
+    Submit 
+</button> 
+</form> 
+<p id = "formResult">
+
+    </p>
+
+    <script >
+    // Gra zgadnij liczbe
+
+    let userNumber = document.getElementById("userNumber").value;
+console.log(userNumber);
+const computerNumber = Math.floor(Math.random() * 10) + 1;
+console.log(computerNumber);
+
+document.getElementById("submit").addEventListener("click", (event) => {
+    userNumber = document.getElementById("userNumber").value;
+    console.log(userNumber);
+    if (userNumber > computerNumber) {
+        document.getElementById("result").innerHTML = "Twoja liczba jest za duza";
+    } else if (userNumber < computerNumber) {
+        document.getElementById("result").innerHTML = "Twoja liczba jest za mała";
+    } else {
+        document.getElementById("result").innerHTML = "Wygrales!";
+    }
+});
+
+
+
+
+// przykladowe zapytanie typu GET - pobieramy dane
+const url = 'https://simple-movie-api-2019.herokuapp.com/movies?limit=100&year=123';
+fetch(url)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(myJson) {
+        console.log(JSON.stringify(myJson));
+    });
+
+
+// Przykładowe zapytanie typu POST - wysyłamy dane
+fetch(url, {
+        method: 'POST',
+        body: JSON.stringify({
+            "title": "aaa",
+            "year": 1234
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(res => res.json())
+    .then(response => console.log('Success:', JSON.stringify(response)))
+    .catch(error => console.error('Error:', error));
+
+
+// event listener  który sprawdza czy wypełniliśmy pole z tytułem i jeśli tak wysyła POST reuqest
+let myForm = document.getElementById("form");
+
+myForm.onsubmit = ((event) => {
+    event.preventDefault();
+    document.getElementById("formResult").innerHTML = "";
+    if (myForm.title.value.length > 0) {
+        fetch("https://simple-movie-api-2019.herokuapp.com/movies", {
+                method: 'POST',
+                body: JSON.stringify({
+                    "title": "aaa",
+                    "year": 1234
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(res => res.json())
+            .then(response => console.log('Success:', JSON.stringify(response)));
+        document.getElementById("formResult").innerHTML = "Dodano film!";
+    } else {
+        document.getElementById("formResult").innerHTML = "Title jest konieczny!";
+    }
+
+
+});
+
+
+// zapytanie do API pokemonów 
+apiCall = () => {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            let pokemon = JSON.parse(this.responseText);
+            console.log(pokemon);
+        }
+    };
+    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/ditto/", true);
+    xhttp.send();
+
+}
+
+apiCall();
+
+
+</script>
+ </body>
+ </html>
