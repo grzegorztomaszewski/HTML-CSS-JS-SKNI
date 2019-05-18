@@ -10,31 +10,31 @@ console.log(arr)
 console.log(arr.length)
 // //dodawanie elementów - push lub po indeksie, unshift
 arr[5] = "Kasia";
-// console.log(arr);
-// arr.push("Marzena");
-// console.log(arr);
-// arr.unshift(45);
-// console.log(arr);
-// //usuwanie elementów - pop, shift
-// arr.pop();
-// console.log(arr);
-// arr.shift();
-// console.log(arr);
+console.log(arr);
+arr.push("Marzena");
+console.log(arr);
+arr.unshift(45);    //dodaje elemnt na początku tablicy 
+console.log(arr);
+//usuwanie elementów - pop, shift
+arr.pop();          //wyrzuca ostani element z tablicy
+console.log(arr);
+arr.shift();        //wyrzuca pierwszy element z tablicy
+console.log(arr);
 
-// //join
-// console.log(arr.join("- - - - "));
-// //sort
-// console.log(arr.sort())
-// const num = [12,2,3,45,67];
-// console.log(num.sort((a,b) => a - b ))
+//join
+console.log(arr.join("- - - - ")); //Łączy elementy z tablicy znakiem podanym w funkcji
+//sort
+console.log(arr.sort()); //sortuje elementy w danej tablicy
+const num = [12,2,3,45,67];
+console.log(num.sort((a,b) => a - b )); //sortowanie w odpowiedniej kolejności
 // //łączenie tablic - concat lub spread operator
-// console.log(arr.concat(num));
-// console.log([...arr, ...num]);
+console.log(arr.concat(num));
+console.log([...arr, ...num]);  //... wyświetla elementy danej tablicy
 
-// //wycinanie kawałka tablicy - slice
-// console.log(arr.slice(2, 5))
+//wycinanie kawałka tablicy - slice
+console.log(arr.slice(2, 5))    //zostawia tylko elementy między pierwszym podanym argumentem a drugim (pierwszy argument zostaje, drugi jest juz usuwany)
 
-// //usuwanie i dodawanie elementów - splice
+//usuwanie i dodawanie elementów - splice
 // arr.splice(2, 1, "Grażynka");
 // console.log(arr)
 // //map

@@ -1,0 +1,11 @@
+Stworzyć prostą stronę internetową która będzie zbudowana w poprawny sposób(HTML) będzie ładnie wyglądała(CSS) oraz będzie miała następujące funkcje:
+1. Po wpisaniu tytułu filmu w inpucie i potwierdzeniu buttonem powinny wyświetlić się wszystkie filmy które spełniają kryterium tytułu wpisane w input. idealnie jakoś wyglądające boxy z danymi.
+Uderzamy pod ten adres w API:
+https://simple-movie-api-2019.herokuapp.com/movies
+2. Poniżej ma być możliwość dodawania filmów do bazy po przez API:
+Uderzamy tez pod ten adres(POST):
+https://simple-movie-api-2019.herokuapp.com/movies
+
+i pamiętamy że musimy sprawdzić po naszej stronie czy użytkownik podał title oraz year w przeciwnym wypadku pokazujemy mu komunikat.
+
+Wiem że projekt nie jest łatwy ale wierzymy że dużo się nauczycie w czasie pracy z nim.
