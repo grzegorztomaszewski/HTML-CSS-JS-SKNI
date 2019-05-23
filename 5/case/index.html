@@ -3,18 +3,29 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>Praca_domowa</title> 
+        <title>Praca_domowa</title>
         <link rel="stylesheet" href="style.css">
     </head>
      <body>
-<form id = "form" action = "https://simple-movie-api-2019.herokuapp.com/movies" method = "POST" >
-    <input name = "title" placeholder="Tytuł np. Friends">
-    <input name = "year" placeholder="Rok np. 1995">
-    <input name = "rated" placeholder="Ocena np. 9.5">
-    <input name = "runtime" placeholder="Czas trwania(min) np. 60">
-    <button type = "submit">Submit</button> 
+         <P>Dodaj film</P>
+<form id = "form_dodaj" action = "https://simple-movie-api-2019.herokuapp.com/movies" method = "POST" >
+    <input id = "title1"  name = "title" placeholder="Tytuł np. Green Book">
+    <input id = "year1" name = "year" placeholder="Rok np. 1995">
+    <input id = "rated1" name = "rated" placeholder="Ocena np. 9.5">
+    <input id = "runtime1" name = "runtime" placeholder="Czas trwania(min) np. 60">
+    <button id = "dodaj" type = "submit">Dodaj</button> 
+</form>
+
+<form id = "form_szukaj" action = "https://simple-movie-api-2019.herokuapp.com/movies" method = "GET" >
+    <input id = "title2" name = "title" placeholder="Tytuł np. Green Book">
+    <input id = "year2" name = "year" placeholder="Rok np. 1995">
+    <input id = "rated2" name = "rated" placeholder="Ocena np. 9.5">
+    <input id = "runtime2" name = "runtime" placeholder="Czas trwania(min) np. 60">
+    <button id = "szukaj" type = "submit">Szukaj</button>
 </form> 
+
 <p id = "formResult"></p>
+
     <script src="index.js"></script>
     </body>
 </html>
